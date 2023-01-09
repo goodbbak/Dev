@@ -1,0 +1,23 @@
+package com.yedam.variable;
+
+public class OperateCasting {
+	public static void main(String[] args) {
+		byte value1 =10;
+		int value2 = 100;
+		long value3 = 1000;//int값 넘을때만 L써줘도 됨
+		
+		long result = value1 + value2 +value3;
+		System.out.println(result);
+		
+		//실수와 정수 타입 변환(연산)
+		
+		int intValue1 = 10;
+		int intValue4 = intValue1/4; // 10/4 =2
+		System.out.println(intValue4);
+		
+		int intValue2 =10;
+		double intValue3 = intValue2 / 4.0;
+		System.out.println(intValue3);
+		
+	}
+}
