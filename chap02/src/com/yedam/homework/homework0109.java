@@ -23,22 +23,22 @@ public class homework0109 {
 		
 		//3-1) byte var1 = 128;
 		   int var1 = 128;
-		   System.out.printf("%d,int",var1);
+		   System.out.printf("%d,int\n",var1);
 		//3-2) char var2 = "B";
 		   String var2 = "B";
-		   System.out.printf("%s,String",var2);
+		   System.out.printf("%s,String\n",var2);
 		//3-3) String var3 = 44032;
 		   int var3 = 44032;
-		   System.out.printf("%d,int",var3);
+		   System.out.printf("%d,int\n",var3);
 		//3-4) int var4 = 100000000000;
 		   long var4 = 100000000000L;
-		   System.out.printf("%d,long",var4);
+		   System.out.printf("%d,long\n",var4);
 		//3-5) float var5 = 43.93106;
 		   double var5 = 43.93106;
-		   System.out.printf("%d,double",var5);
+		   System.out.printf("%f,double\n",var5);
 		//3-6) long var6 = 301.3;
-		   float var6 = 301.3f;
-		   System.out.printf("%d,float",var6);
+		   float var6 = 301.3F;
+		   System.out.printf("%f,float\n",var6);
 		
 		// 문제4) 아래와 같이 변수가 초기화되어있을 경우 결과값을 저장할 변수의 타입을 지정하고 값을 변수값을 출력하세요.
 		byte a = 35;
@@ -77,6 +77,7 @@ public class homework0109 {
 		int intValue4 = 10;
 		char charValue = 'A';
 		String strValue = "번지";
+		//System.out.println(charValue+intValue1+intValue2+intValue3);
 		    
 	    /* 추가문제) 아래와 같이 변수 값이 주어질 경우 각 자리의 합을 구해 출력하세요. 
 		    예시) 373 일 경우 3 + 7 + 3 = 13 으로 결과는 13입니다.
