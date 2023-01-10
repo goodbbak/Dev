@@ -1,4 +1,4 @@
-package com.yedam.homework;
+package homework;
 
 public class homework0109 {
 	public static void main(String[] args) {
