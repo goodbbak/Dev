@@ -2,7 +2,7 @@ package com.yedam.loop;
 
 import java.util.Scanner;
 
-public class LoopFor {
+public class LoopFor1 {
 
 	public static void main(String[] args) {
 		for(int i = 0; i <= 100; i++) {
