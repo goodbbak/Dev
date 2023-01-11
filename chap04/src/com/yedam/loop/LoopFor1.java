@@ -69,24 +69,39 @@ public class LoopFor1 {
 		
 		//up and down
 		//임의의 랜덤값(1~100) 추출해 5번의 기회안에 해당 값 맞추기
-		int cor = (int)(Math.random()*100)+1;
-		for(int i = 0; i < 5; i++) {
-			System.out.println("입력>");
-			int input = Integer.parseInt(sc.nextLine());
-			if(input == cor) {
-				System.out.println("정답입니다!");
+		int randomNum = (int)(Math.random()*100)+1;
+		System.out.println(randomNum);
+		int chance = 5;	
+		while(chance>0) {		
+			System.out.println("1~100중 하나 선택 ㄱ>");
+			int myNum = Integer.parseInt(sc.nextLine());
+			if(myNum == randomNum) {
+				System.out.println("정답");
 				break;
-			} else if(input > cor) {
-				System.out.println("down");
-			} else if(input < cor) {
-				System.out.println("up");
-			}
-			if(input != cor) {
-				if(i == 4) {
-					System.out.println("실패하였습니다~");
-				}
-			}
+			}else {
+				System.out.println("틀림");
+				chance -=1;				
+			}			
 		}
+		if(chance == 0) {
+			System.out.println("5번의 기회 모두 소진");
+		}
+		
+		//관수씨 풀이		
+		  int cor = (int)(Math.random()*100)+1; 
+		  for(int i = 0; i < 5; i++) {
+			  System.out.println("입력>"); 
+			  int input = Integer.parseInt(sc.nextLine());
+			  if(input == cor) { 
+				  System.out.println("정답입니다!"); break; 
+			  } else if(input >cor) { 
+		  		System.out.println("down"); 
+		  	 } else if(input < cor) {
+		  		System.out.println("up"); 
+		  		} 
+		  if(input != cor) { if(i == 4) {
+		  System.out.println("실패하였습니다~"); } } }
+		 
 	}
 	
 }

@@ -9,7 +9,7 @@ public class Reference {
 	
 	System.out.println(array);  //주소가 나옴
 	System.out.println(array2);
-	System.out.println(array==array2); //같은 데이터지만 주소가 다름
+	System.out.println(array==array2); //같은 데이터지만 주소가 다름 string만 데이터 같을 때 같은 주소 사용
 	System.out.println(intVal);
 	System.out.println(array3[0]);
 	

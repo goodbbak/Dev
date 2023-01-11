@@ -28,7 +28,7 @@ public class Array01 {
 		}
 		System.out.println("총 합계 :"+ sum);
 		
-		//new 연산자 활용한 배열 새엉
+		//new 연산자 활용한 배열 생성
 		int[] point;
 		
 		point = new int[] {83,90,87};

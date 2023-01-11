@@ -4,7 +4,7 @@ public class StringRef {
 
 	public static void main(String[] args) {
 		String strVal1 = "yedam";
-		String strVal2 = "yedam";
+		String strVal2 = "yedam";  //yedam이라는 데이터는 heap에 들어가고 스택에는 주소가 있음
 		
 		if(strVal1 == strVal2) {
 			System.out.println("strVal1과strVal2는 메모리 주소가 같다"); // 참조변수중 String만 예외로 같음
@@ -12,7 +12,7 @@ public class StringRef {
 			System.out.println("strVal1과strVal2는 메모리 주소가 다르다");
 		}
 
-		if(strVal1.equals(strVal2)) {
+		if(strVal1.equals(strVal2)) { //데이터(눈에 보이는 글자자체)를 확인할땐 .equals
 			System.out.println("strVal1과strVal2는 데이터 동일");
 		} else {
 			System.out.println("strVal1과strVal2는 데이터 다름");
