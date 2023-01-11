@@ -71,8 +71,8 @@ public class homework0110 {
 		//   ***
 		//  ****
 		// *****
-			for(int i=5;i>=1;i--) {
-				for(int j=1;j<=i;j++) {
+			for(int i=1;i<=5;i++) {
+				for(int j=5;j>=1;j--) {
 					if(i<j) {
 						System.out.print(" ");
 					} else {
@@ -91,11 +91,11 @@ public class homework0110 {
 		// 2 X 1 = 2
 		// 2 X 2 = 4
 		// 2 X 3 = 6
-		/*
-		 * System.out.println("m값>"); int m = Integer.parseInt(sc.nextLine());
-		 * System.out.println("n값>"); int n = Integer.parseInt(sc.nextLine()); for(int
-		 * i=1;i<=n;i++) { System.out.println(m+"*"+i+"="+(m*i)); }
-		 */
+		
+		  System.out.println("m값>"); int m = Integer.parseInt(sc.nextLine());
+		  System.out.println("n값>"); int n = Integer.parseInt(sc.nextLine()); for(int
+		  i=1;i<=n;i++) { System.out.println(m+"*"+i+"="+(m*i)); }
+		 
 		
 		
 
