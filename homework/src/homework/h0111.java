@@ -66,15 +66,17 @@ public class h0111 {
 		// 아래 빈 영역에 코드를 입력하여 프로그램을 완성하여라
 
 			//public static void main(String[] args) {
-			/*
-			 * int[] answer = { 1, 4, 4, 3, 1, 4, 4, 2, 1, 3, 2 }; int[] counter = new
-			 * int[4]; for (int i = 0; i < answer.length; i++) {
-			 * 
-			 * } for (int i = 0; i < counter.length; i++) {
-			 * 
-			 * 
-			 * System.out.println(); } }
-			 */
+			
+			  int[] answer = { 1, 4, 4, 3, 1, 4, 4, 2, 1, 3, 2 }; 
+			  int[] counter = new int[4]; 
+			  
+			  for (int i = 0; i < answer.length; i++) {
+				  
+			  } for (int i = 0; i < counter.length; i++) {
+			  
+			  
+			  System.out.println(); } 
+			 
 		// ※ 배열의 각 인덱스와 숫자의 연관성을 지으면서 풀어 볼 것.
 		// 출력 예시) ***
 	        //            **
