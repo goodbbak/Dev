@@ -18,7 +18,8 @@ public class h0112 {
 		
 		Object[] objAry = null; //상품객체를 담을 배열 생성
 		int objno =0; //왜 여기다 한번 해주는지 생각
-		while(true) {		
+		Boolean run =true;
+		while(run) {		
 			System.out.println("1.상품 수 | 2.상품 및 가격입력 | 3.제품별 가격 | 4.분석 | 5.종료");
 			int selectNo = Integer.parseInt(sc.nextLine());
 			if(selectNo == 1) {
@@ -42,16 +43,17 @@ public class h0112 {
 				
 			} else if(selectNo == 4) {
 				int max = objAry[0].price;
-				String objectName;
+				String objectName = "";
 				for(int i=0;i<objAry.length;i++) {
 					if(max<objAry[i].price) {
 						max = objAry[i].price;
 						objectName = objAry[i].name;
 					}
-				}System.out.println("");
+				}System.out.println("가장비싼상품:"+objectName+"가격:"+max);
 				
 			} else if(selectNo == 5) {
 				System.out.println("프로그램 종료");
+				run = false;
 				break;
 			}    
 			
