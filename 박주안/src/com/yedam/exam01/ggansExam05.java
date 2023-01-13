@@ -8,13 +8,13 @@ public class ggansExam05 {
 		Scanner sc = new Scanner(System.in);
 		int selectNo;
 		int diceSize = 0;
-		int[] diceNo = null;
+		int[] diceNo = null; //얘를 왜 case2번에 안 넣고 빼뒀는지
 		// diceNo[0] = 주사위1, [1] = 주사위2...
 		Outter: while (true) {
 			System.out.println("===1.주사위 크기|2.주사위 굴리기|3.결과 보기|4.가장 많이 나온 수|5.종료===");
 			System.out.println("메뉴 >");
 			selectNo = Integer.parseInt(sc.nextLine());
-			switch (selectNo) {
+			switch (selectNo) {           
 			case 1:
 				System.out.println("주사위 크기 >");
 				diceSize = Integer.parseInt(sc.nextLine());
@@ -30,9 +30,9 @@ public class ggansExam05 {
 				diceNo = new int[diceSize];
 				while (option) {
 					int dice = (int) (Math.random() * diceSize) + 1;
-					diceNo[dice - 1]++;
+					diceNo[dice - 1]++; //이거배움?
 					count++;
-					if (dice == 5) {
+					if (dice == 5) {                                                                  
 						option = false;
 					}
 				}
