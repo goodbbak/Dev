@@ -8,7 +8,6 @@ public class exam03 {
 		coinUnit[2] = 50;
 		coinUnit[3] = 10;
 		int money = 2680;		
-		int[] as = null; 
 		for(int i=0;i<coinUnit.length;i++) {		
 				int a = money/coinUnit[i];
 				money -= a*coinUnit[i];	
