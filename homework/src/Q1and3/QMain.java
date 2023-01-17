@@ -1,6 +1,6 @@
-package h0117;
+package Q1and3;
 
-public class Question1 {
+public class QMain {
 	public static void main(String[] args) {
 		Keypad game = new RPGgame();
 
