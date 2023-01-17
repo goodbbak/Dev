@@ -5,5 +5,13 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="com.yedam.object.Circle"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch03_example.PlayerLevel"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch03_example.AdvancedLevel"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch03_example.SuperLevel"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch01_01.SmartTelevision"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch01_01.RemoteControl"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch02_01.HankookTire"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch02_01.KumhoTire"/>
+    <fullyQualifiedTypeName name="com.yedam.java.ch02_02.SmartTv"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
