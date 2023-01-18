@@ -13,7 +13,7 @@ public class IndexOfExample {
 			System.out.println("자바 단어 포함");
 		}
 		
-		if(subject.indexOf("자바")>-1){ //위 방식이랑 똑같음
+		if(subject.indexOf("자바") > -1){ //위 방식이랑 똑같음
 			System.out.println("자바라는 단어가 포함 안 됨");
 		} else {
 			System.out.println("자바 단어 포함");

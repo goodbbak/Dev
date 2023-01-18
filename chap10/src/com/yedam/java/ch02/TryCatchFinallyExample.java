@@ -37,11 +37,17 @@ public class TryCatchFinallyExample {
 			System.out.println("프로그램이 종료되었습니다.");
 		}
 		
-		findClass();
+		try {
+			findClass();
+		} catch (NullPointerException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 			
 	}
 	
-	public static void findClass() throws NullPointerException {
+	public static void findClass() throws NullPointerException, ClassNotFoundException {
 		String className = null;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("찾고자 하는 클래스 이름을 적어주세요.");
@@ -51,6 +57,6 @@ public class TryCatchFinallyExample {
 			throw new NullPointerException();
 		}
 		
-		
+		Class clazz = Class.forName(className);
 	}
 }
