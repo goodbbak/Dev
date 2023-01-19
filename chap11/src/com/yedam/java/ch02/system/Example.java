@@ -1,4 +1,4 @@
-package com.yedama.java.ch02.system;
+package com.yedam.java.ch02.system;
 
 public class Example {
 	public static void main(String[] args) {
