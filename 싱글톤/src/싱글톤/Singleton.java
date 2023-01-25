@@ -1,7 +1,7 @@
 package 싱글톤;
 
 public class Singleton {
-	private Singleton singleton = null;
+	private static Singleton singleton = null;
 	
 	//생성자 막음=>외부에서 싱글톤객체 생성 못함
 	private Singleton() {
