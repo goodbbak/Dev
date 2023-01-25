@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Dev\.git"/>
 	<list key="EGit.KnownHosts">
 		<item value="git.eclipse.org"/>
 		<item value="github.com"/>
@@ -36,5 +38,8 @@
 	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="809"/>
 		<item key="DIALOG_Y_ORIGIN" value="401"/>
+	</section>
+	<section name="GitImportWizard">
+		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
 	</section>
 </section>
