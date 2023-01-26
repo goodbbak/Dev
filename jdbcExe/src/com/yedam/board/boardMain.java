@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class boardMain {
 	public static void main(String[] args) {
-		
+		https://chicken-tender-2019.tistory.com/61
 		while(true) {
 			System.out.println("1.회원가입 | 2.로그인 | 3.회원탈퇴");
 			Scanner sc = new Scanner(System.in);

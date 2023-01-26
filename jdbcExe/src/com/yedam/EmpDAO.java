@@ -36,7 +36,7 @@ public class EmpDAO {
 //C(create)R(read)U(update)D(delete)
 
 	// 목록조회
-	public List<Map<String, Object>> empList() {
+	public List<Map<String, Object>> empList() {//타입안의타입?
 		sql = "select * from emp_temp";
 		connect();
 		List<Map<String, Object>> list =  new ArrayList<Map<String,Object>>();
@@ -44,7 +44,7 @@ public class EmpDAO {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
 			while(rs.next()) {
-				Map<String,Object> map = new HashMap<>();
+				Map<String,Object> map = new HashMap<>(); //<>지우면 안되나?
 				map.put("emp_id", rs.getInt("employee_id"));
 				map.put("first_name", rs.getString("first_name"));
 				map.put("last_name", rs.getString("last_name"));
@@ -90,13 +90,13 @@ public class EmpDAO {
 		connect();
 		try {
 			stmt = conn.createStatement();
-			rs = stmt.executeQuery(sql);
+			rs = stmt.executeQuery(sql); //rs에 쿼리문 받은 디비의 응답이 담김
 			if(rs.next()) { //다음으로 넘어가서 값이 있으면 true
 				EmpVO emp = new EmpVO(); //조회해서 받은 데이터를 emp객체 만들어서
 				emp.setEmployeeId(rs.getInt("employee_id")); //객체의 필드에 저장
-				emp.setFirstName(rs.getString("first_name"));
-				emp.setLastName(rs.getString("last_name"));
-				emp.setEmail(rs.getString("email"));
+				emp.setFirstName(rs.getString("first_name")); //근데 왜 굳이 EmpVO 사용?
+				emp.setLastName(rs.getString("last_name"));	 //바로 System.out.println(rs.getString("last_name"));
+				emp.setEmail(rs.getString("email"));		//하면 안되나?
 				emp.setSalary(rs.getInt("salary"));
 				emp.setHireDate(rs.getString("hire_date"));
 				return emp;
@@ -120,7 +120,7 @@ public class EmpDAO {
 			psmt.setString(4, emp.getHireDate());
 			psmt.setString(5, emp.getJobId());
 			
-			r = psmt.executeUpdate(); //처리된 건수.
+			r = psmt.executeUpdate(); //처리된 건수. 조회빼고는 이걸로 숫자가 바뀐것 확인해서 메소드가 잘 실행됨을 확인
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -144,10 +144,10 @@ public class EmpDAO {
 		}
 		return r;
 	}
-	// 삭제 //안됨 다시
+	// 삭제 //안됨 employee_ 추가했음 다시 확인
 	public int deleteEmp(int id) {
 		connect();
-		sql = "delete from emp_temp where id = ?";
+		sql = "delete from emp_temp where employee_id = ?"; 
 		int r = 0;
 		try {
 			psmt = conn.prepareStatement(sql);

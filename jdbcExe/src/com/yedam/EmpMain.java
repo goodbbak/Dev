@@ -41,7 +41,7 @@ public class EmpMain {
 //					+ ", 급여: " + map.get("salary")//
 //			);
 //		}
-
+ 
 		List<EmpVO> list = dao.empVoList();
 		for (EmpVO emp : list) {
 			System.out.println(emp.toString());
@@ -60,8 +60,8 @@ public class EmpMain {
 //			continue;
 		} else {
 			// 반환유형: EmpVO
-			System.out.println("결과: " + emp);
-		}
+			System.out.println("결과: " + emp);//EmpDAO에서보면 emp는 인스턴스인데 왜 출력이가능?
+		}									  //EmpVO에 toString()메소드 만들어놔서그런거였음
 	}
 
 	// 입력. add()
