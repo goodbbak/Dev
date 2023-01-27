@@ -9,6 +9,7 @@ public class EmpMain {
 
 	public void exe() {
 		while (true) {
+			
 			System.out.println("1)목록조회 2)단건조회 3)입력 4)급여변경 5)삭제 9)종료");
 			int menu = scn.nextInt();
 			if (menu == 5) {
@@ -61,7 +62,7 @@ public class EmpMain {
 		} else {
 			// 반환유형: EmpVO
 			System.out.println("결과: " + emp);//EmpDAO에서보면 emp는 인스턴스인데 왜 출력이가능?
-		}									  //EmpVO에 toString()메소드 만들어놔서그런거였음
+		}									  //EmpVO에 toString()메소드 만들어놔서그런듯
 	}
 
 	// 입력. add()
@@ -109,7 +110,13 @@ public class EmpMain {
 
 	// 삭제. remove()
 	public void remove() {
-
+		System.out.println("사원번호입력>> ");
+		int eid = scn.nextInt();
+		if (dao.deleteEmp(eid) > 0) {
+			System.out.println("삭제 성공!!");
+		} else {
+			System.out.println("처리중에러!!");
+		}
 	}
 
 } // end of class
