@@ -36,6 +36,6 @@ public class BoardVO {
 		return no+"  " +title+"  "+ writer+"  "+date;
 	}
 	public void printF() {
-		System.out.printf(" %-5d| %-10s| %-4s| %-5s", no,title,writer,date);
+		System.out.printf(" %-5d| %-18s| %-4s| %-5s\n", no,title,writer,date);
 	}
 }

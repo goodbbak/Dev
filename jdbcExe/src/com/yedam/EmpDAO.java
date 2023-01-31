@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class EmpDAO {
 	//필드
-	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String url = "jdbc:oracle:thin:@192.168.0.56:1521:xe";
 	String user = "hr";
 	String pass = "hr";
 	
@@ -110,7 +110,7 @@ public class EmpDAO {
 	public int addEmp(EmpVO emp) {
 		connect();
 		sql = "insert into emp_temp (employee_id,last_name,email,hire_date,job_id) "
-				+ "values(?,?,?,?,?);";
+				+ "values(?,?,?,?,?)";
 		int r = 0;
 		try {
 			psmt = conn.prepareStatement(sql);
